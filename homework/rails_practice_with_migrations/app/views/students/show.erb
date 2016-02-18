@@ -1,0 +1,10 @@
+<h1>Student Info</h1>
+<h3><%= @student.first_name %> <%= @student.last_name %></h3>
+<h4>Addresses</h4>
+<% @student_addresses.each do |address| %>
+<p><%= address %></p>
+<% end %>
+<h4>Classes:</h4>
+<% @courses.each do |course| %>
+<p><%= course %></p>
+<% end %>
