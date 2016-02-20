@@ -1,0 +1,7 @@
+<h1>All Tags</h1>
+<% @tags.each do |tag| %>
+<p><%= tag.to_s %></p>
+
+<%= link_to "Delete", tag_path(tag.id), method: :delete %>
+
+<% end %>
